@@ -1,0 +1,1 @@
+import{i as d,e as i}from"./reddit-tool-Bph6d5Kw.js";chrome.action.onClicked.addListener(async e=>{const t=e.url;if(d(t)){const s=i(t);chrome.tabs.create({url:`https://redplus.ai/reddit-video-downloader#${s}`,active:!0})}else chrome.tabs.sendMessage(e.id,{type:"open-popup",message:"This is not a valid reddit post"})});
