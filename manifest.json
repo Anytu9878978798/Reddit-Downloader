@@ -1,0 +1,32 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "service-worker-loader.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "assets/content.js-loader-DpA5sECs.js" ],
+      "matches": [ "*://*.reddit.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+   },
+   "description": "A reliable reddit video downloader with sound by Redsave.",
+   "host_permissions": [ "*://*.reddit.com/*" ],
+   "icons": {
+      "128": "logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAluUEN3J3wpJ1sSAYiXUB08Jiq6VVLHHIdhaVx0nwZjFRFrtCZdmpMS6EwrlXkQo4zA/08NMSB7QaFBDP+Uxk8EsiLZsONAUlMYgi3SaFBdZJcdEEGlOshuCcsKnZTzwD6266nh8cROkxUBEDSxgNghsL5GIPtpHrZHlEhHrHO4Pk6qu/OYmro1l3zoFZrSpEkaQEwuZT2sEcjeTfPJxqAe5BAaa3dXUl5TDfSXdtwupiiDoviuX9nCPvXI+DCp70JLLu6oX+XbSeigXbYfz5txzUT8duxEbKhuvdWH7UdR180bMn56hU2DdVqrrvAL5BeGVvUVs5vN1eAkND48utkQIDAQAB",
+   "manifest_version": 3,
+   "name": "Download Reddit Videos | Redsave",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.2",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*.reddit.com/*" ],
+      "resources": [ "logo.png", "assets/reddit-tool-Bph6d5Kw.js", "assets/content.js-DpcupUmY.js" ],
+      "use_dynamic_url": false
+   } ]
+}
